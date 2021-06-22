@@ -1,6 +1,8 @@
 // Import stylesheets
-import './style.css';
+import { Stack } from './stack';
 
-// Write TypeScript code!
-const appDiv: HTMLElement = document.getElementById('app');
-appDiv.innerHTML = `<h1>TypeScript Starter</h1>`;
+let stack = new Stack(2);
+stack.push(1);
+stack.push(2);
+console.log(stack.pop());
+console.log(stack.pop());
